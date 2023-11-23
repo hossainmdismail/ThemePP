@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/70b22ffbec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="flex flex-col h-screen w-full">
+
+    <!----header--->
+    <div class="w-full fit-content block flex item-center justify-between py-6 px-8 border-b">
+      <!-- tab -->
+      <div class="flex">
+        <ul class="flex gap-2 text-sm items-center justify-center">
+          <li class="hidden md:block"><a href="#"><i class="fa-solid fa-house text-gray-500"></i></a></li>
+          <span class="text-gray-300 hidden md:block">/</span>
+          <li><a class="font-semibold text-gray-500" href="#">Template</a></li>
+          <span class="text-gray-300">/</span>
+          <li><a class="font-semibold text-gray-500" href="#">Synex Digital</a></li>
+        </ul>
+      </div>
+
+      <!-- Responsive buttons -->
+      <ul class="flex gap-2 text-gray-600 text-sm">
+        <li class="bg-gray-200 p-2 w-10 text-center rounded-xl hover:bg-gray-300 hidden lg:block" id="pc"><i
+            class="fa-solid fa-laptop"></i></li>
+        <li class="bg-gray-200 p-2 w-10 text-center rounded-xl hover:bg-gray-300 hidden md:block" id="tab"><i
+            class="fa-solid fa-tablet"></i></li>
+        <li class="bg-gray-200 p-2 w-10 text-center rounded-xl hover:bg-gray-300 hidden md:block" id="phone"><i
+            class="fa-solid fa-mobile"></i></li>
+      </ul>
+
+      <!-- Button -->
+      <button
+        class="bg-indigo-600 inline-flex items-center justify-center px-6 py-2 text-sm  font-medium text-white transition duration-150 border border-transparent shadow-sm rounded-2xl bg-cool-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cool-indigo-500">Get
+        Template</button>
+    </div>
+
+    <!----iframe---->
+    <div class="relative w-full h-full shadow rounded-xl overflow-hidden flex item-center justify-center p-4">
+
+      <div class="absolute bg-gray-400 w-4 h-4 top-6 rounded-full border-4 border-gray-300"></div>
+
+      <iframe style="transition: all .2s linear" class="w-[100rem] rounded-xl border-t-[2rem] shadow-xl"
+        id="responsiveframe" src="https://synexdigital.com" frameborder="2"></iframe>
+    </div>
+  </div>
+
+
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
